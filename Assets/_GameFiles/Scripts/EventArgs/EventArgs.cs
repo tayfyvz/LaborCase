@@ -1,8 +1,9 @@
-using TadPoleFramework.Core;
+using System;
+using EventDrivenFramework.Core;
 
-namespace TadPoleFramework
+namespace EventDrivenFramework
 {
-    public class SceneStartedEventArgs : BaseEventArgs
+    public class SceneStartedEventArgs : EventArgs
     {
         
     }

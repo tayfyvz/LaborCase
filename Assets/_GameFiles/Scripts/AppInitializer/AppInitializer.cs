@@ -1,5 +1,6 @@
-using TadPoleFramework;
-using TadPoleFramework.Core;
+using _GameFiles.Scripts.Managers._HighLevelManagers;
+using EventDrivenFramework;
+using EventDrivenFramework.Core;
 using UnityEngine;
 
 public class AppInitializer : MonoBehaviour

@@ -1,36 +1,23 @@
-using System.Collections.Generic;
-using System.ComponentModel;
-using TadPoleFramework;
-using TadPoleFramework.Core;
-using UnityEngine;
-namespace TadPoleFramework
+using System;
+using EventDrivenFramework;
+using EventDrivenFramework.Core;
+
+namespace _GameFiles.Scripts.Managers
 {
     public class LevelManager : BaseManager
     {
         private GameModel _gameModel;
-        public override void Receive(BaseEventArgs baseEventArgs)
+        public override void Receive(EventArgs eventArgs)
         {
-            switch (baseEventArgs)
+            switch (eventArgs)
             {
                 
             }
         }
 
-        protected override void Start()
-        {
-
-        }
         public void InjectModel(GameModel gameModel)
         {
             _gameModel = gameModel;
-            _gameModel.PropertyChanged += GameMOdelProperetyChangedHandler;
-        }
-        private void GameMOdelProperetyChangedHandler(object sender, PropertyChangedEventArgs e)
-        {
-            if (e.PropertyName == nameof(_gameModel.Level))
-            {
-                
-            }
         }
     }
 }

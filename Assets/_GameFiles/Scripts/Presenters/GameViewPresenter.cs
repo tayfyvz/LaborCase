@@ -1,16 +1,17 @@
+using System;
 using System.Collections;
-using TadPoleFramework.Core;
-using TadPoleFramework.UI;
+using EventDrivenFramework.Core;
+using EventDrivenFramework.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace TadPoleFramework
+namespace EventDrivenFramework
 {
     public class GameViewPresenter : BasePresenter
     {
-        public override void Receive(BaseEventArgs baseEventArgs)
+        public override void Receive(EventArgs EventArgs)
         {
-            switch (baseEventArgs)
+            switch (EventArgs)
             {
 
             }

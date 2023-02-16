@@ -1,9 +1,9 @@
-using TadPoleFramework.Game;
+using EventDrivenFramework.Core;
 using UnityEngine;
 
-namespace TadPoleFramework
+namespace EventDrivenFramework
 {
-    public class GameModel : BaseGameModel
+    public class GameModel : BaseModel
     {
         #region Score //////////////////////////////////////////////////////
         protected string prefKey_Score = "Score";

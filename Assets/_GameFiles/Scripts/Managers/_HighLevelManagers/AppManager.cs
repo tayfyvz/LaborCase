@@ -1,19 +1,23 @@
-using TadPoleFramework.App;
-using TadPoleFramework.Core;
+using System;
+using DG.Tweening;
+using EventDrivenFramework.Core;
+using UnityEngine;
+
 // using ElephantSDK;
 // using GameAnalyticsSDK;
-namespace TadPoleFramework
+namespace _GameFiles.Scripts.Managers._HighLevelManagers
 {
-    public class AppManager : BaseAppManager
+    public class AppManager : BaseManager
     {
-        public override void Receive(BaseEventArgs baseEventArgs)
+        public override void Receive(EventArgs eventArgs)
         {
-            switch (baseEventArgs)
-            {
-                
-            }
         }
 
+        protected void Awake()
+        {
+            DOTween.SetTweensCapacity(1000, 1000);
+            Application.targetFrameRate = 60;
+        }
         /*protected override void Start()
         {
             base.Start();
